@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #F4F4F4;
+    color: #333;
+    line-height: 1.6;
+  }
+  header{
+    text-align: center ;
+    background :#393B4B;
+    color:#8B93E7;
+  }
+  
+  /* Background Container */
+  .background {
+    background-image:url('blue-hive.jpeg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: darkred;
+    background-color: rgba(255, 255, 255, 0.23);
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border:1px dashed #09B4F5;
+    padding: 15px 30px;
+  }
+  
+  .subtitle {
+    background:linear-gradient(90deg,#E4F7FC,#D2F2FA, #AEF0FF,#73D0FF, #73D0FF);
+    background-clip: text;
+    color: transparent;
+    font-size: 27px;
+    text-align: center ;
+    width:140px;
+    border-bottom: 2px dashed #09B4F5;
+  }
+  
+  
+  .line {
+    list-style: none;
+    display: flex;
+  }
+  
+  .line li {
+    margin: 0 15px;
+  }
+  
+  .line li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s ease;
+  }
+  
+  .line li a:hover {
+    padding-bottom: 2px;
+    border-bottom: 1.5px solid #3DABE6;
+    color: #00FFF8;
+  }
+  
+  /* Sections */
+  .section1 {
+    background: darkred;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: start;
+    color: floralwhite;
+    
+    background-color: rgba(255, 255, 255, 0.23);
+    border:1px dashed #09B4F5;
+  }
+  
+  .identifier{
+    display: flex;
+    flex-wrap: wrap;
+    background: darkred;
+    align-items: center ;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: start;
+    color: floralwhite;
+    background-color: rgba(255, 255, 255, 0.23);
+    margin-top: 100px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border:1px dashed #09B4F5;
+  } .identifier h3{
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  
+  .idinpt{
+    background: #FFFFFF29;
+    color:#E7FFFF;
+    height:33px;
+    padding:5px;
+    border:1px inset lightgoldenrodyellow;
+  }.submitbtn {
+    width: 55px;
+    height: 38px;
+    margin-left: 5px;
+    border-bottom-right-radius:8px;
+    border:2px solid #A1D5F2;
+    background-color:#1787DD;
+    color:#FCFCFC;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #2F3039;
+    color: #545CAF;
+    position: relative;
+    bottom: 0;
+    width:100%;
+  }
+  
+  
+  
+  
+  /*___________________________________*/
+  
+  .profilesect{
+    background: darkred;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: start;
+  color: floralwhite;
+  
+  background-color: rgba(255, 255, 255, 0.23);
+  border:1px dashed #09B4F5;
+  }
+  
+  .area1{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+  } .area1 ul{
+    margin-left: 10px;
+    list-style: none;
+  }
+  
+  
+  .profile1{
+    width: 90px;
+    height: 90px;
+    border-radius:50px;
+    border:1px dashed #09B4F5;
+  }
+  
+  h4{
+    margin-left: 10px;
+    text-align: start;
+  }h6{
+    margin-left: 10px;
+    margin-top:3px;
+    color: #FAFAFFBF;
+  }.comment{
+    margin-left: 10px;
+    text-align: start;
+  }
+  
+  
+  @media (max-width: 480px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      } .subtitle{
+        margin-bottom: 9px;
+      }
+  
+      .section1 {
+          padding: 10px;
+          text-align: center;
+      }
+      
+      .identifier{
+        margin-top: 30px;
+      }
+      .idinpt{
+        height: 33px;
+        width: 214px;
+      }.submitbtn{
+        width:50px;
+        height: 33px;
+        margin-left: 5px;
+      }
+      
+      /*__________________*/
+      .area1{
+        flex-direction: column;
+        align-content: center ;
+      }.area1 ul{
+        margin: 0;
+      } h4{
+        text-align: center;
+        margin:0;
+      } h6{
+        text-align: center ;
+        margin: 0;
+      }.comment{
+        text-align: center;
+        margin: 0;
+      }
+  }
+
+  
